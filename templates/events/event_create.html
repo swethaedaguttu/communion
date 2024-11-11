@@ -1,0 +1,73 @@
+<!-- events/templates/events/event_create.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Create Event</title>
+    <style>
+        body {
+            background: linear-gradient(to top, rgba(135, 206, 250, 0.8), rgba(255, 255, 255, 0.9));
+            background-size: cover;
+            color: #333;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 5%;
+            padding: 30px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #801155;
+        }
+
+        .btn {
+            background-color: #FF6F20;
+            color: #ffffff;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #FF8C00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Create Event for {{ community.name }}</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="title">Event Title</label>
+                <input type="text" class="form-control" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Event Date</label>
+                <input type="datetime-local" class="form-control" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" class="form-control" id="location" name="location" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" name="description" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Create</button>
+        </form>
+
+        <div class="text-center mt-3">
+            <a href="event_list" class="btn btn-secondary">Back to Event List</a>
+            <a href="index" class="btn btn-secondary mt-2">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

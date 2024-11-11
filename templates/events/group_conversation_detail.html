@@ -1,0 +1,1219 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://r.mobirisesite.com/881540/assets/images/photo-1551135049-8a33b5883817.jpeg" type="image/x-icon">
+  <meta name="description" content="Join our vibrant discussion room to engage in meaningful conversations on various topics. Share your thoughts, learn from others, and connect with like-minded individuals.">
+  <title>Engage in Conversations</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1731155146071">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/bootstrap/css/bootstrap.min.css?rnd=1731155146071">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1731155146071">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1731155146071">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/parallax/jarallax.css?rnd=1731155146071">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/dropdown/css/style.css?rnd=1731155146071">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/socicon/css/styles.css?rnd=1731155146071">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/theme/css/style.css?rnd=1731155146071">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/recaptcha.css?rnd=1731155146071">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/881540/assets/css/mbr-additional.css?rnd=1731155146071" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  
+  
+  
+
+
+<style>
+.navbar-fixed-top {
+  top: auto;
+}
+#mobiriseBanner.container-banner {
+  height: 8rem;
+  opacity: 1;
+  -webkit-animation: 4s linear animationHeight;
+  -moz-animation: 4s linear animationHeight;
+    -o-animation: 4s linear animationHeight;
+       animation: 4s linear animationHeight;
+       transition: all  0.5s;
+}
+#mobiriseBanner.container-banner.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s linear animationClosing;
+  -moz-animation:  0.5s linear animationClosing;
+    -o-animation:  0.5s linear animationClosing;
+       animation:  0.5s linear animationClosing;
+}
+#mobiriseBanner .banner {
+  min-height: 8rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  opacity:1;
+  -webkit-animation: 4s linear animationBanner;
+  -moz-animation: 4s linear animationBanner;
+    -o-animation: 4s linear animationBanner;
+       animation: 4s linear animationBanner;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mobiriseBanner .banner p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+#mobiriseBanner .buy-license {
+  text-decoration: underline;
+}
+#mobiriseBanner .banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+.mbr-halfscreen {
+  height: 60vh; /* This will set the section height to 50% of the viewport height */
+}
+/* Discussion Section Styles */
+/* Container */
+/* Container */
+.discussion-container {
+  max-width: 100%;
+  height: 100%;
+  background-color: #f0f8ff; /* Lighter background */
+  color: #333333; /* Darker text for better readability */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Prevent overflow from container */
+}
+
+/* Group Info Section */
+.group-info {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #b4b8b9; /* Lighter border */
+  margin-bottom: 20px;
+}
+
+.group-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4f4f4f; /* Lighter dark gray */
+}
+
+.group-topic,
+.group-description {
+  color: #9e9e9e; /* Lighter gray text */
+  font-size: 16px;
+}
+
+/* Conversations Section */
+.conversations-list {
+  flex-grow: 1;
+  overflow-y: scroll; /* Enable vertical scrollbar */
+  margin-top: 20px;
+  padding-right: 10px;
+  max-height: 500px; /* Limit height of the conversation section */
+}
+
+.conversation-card {
+  background-color: #ffffff; /* White background for each card */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  color: #007b7f; /* Lighter teal */
+  font-weight: bold;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #b2b2b2; /* Lighter gray for timestamp */
+  margin-top: 2px;
+}
+
+.message-text {
+  margin-top: 5px;
+  color: #444444; /* Darker gray text for message */
+}
+
+/* Message Input Form */
+.form-container {
+  padding-top: 20px;
+  border-top: 1px solid #b4b8b9; /* Lighter border for input section */
+  position: relative;
+}
+
+.input-section {
+  display: flex;
+  align-items: center;
+  background-color: #e0f7fa; /* Light cyan for input background */
+  border-radius: 30px;
+  padding: 8px 12px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #333333; /* Darker text for visibility */
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  min-height: 40px;
+  max-height: 150px; /* Limit height of textarea */
+  overflow-y: auto; /* Add scroll when text overflows */
+}
+
+.attachment-btn,
+.emoji-btn {
+  cursor: pointer;
+  color: #007b7f; /* Lighter teal for buttons */
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.submit-btn {
+  background-color: #66b3b3; /* Lighter teal background */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #4d9e9e; /* Darker teal on hover */
+}
+
+/* Emoji Picker */
+.emoji-picker {
+  position: absolute;
+  bottom: 60px;
+  background-color: #e0f7fa; /* Light cyan for emoji picker background */
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 5px;
+}
+
+.emoji-picker span {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Attachment Preview */
+.attachment-preview img,
+.attachment-preview video {
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* Hover Effects */
+.attachment-btn:hover {
+  background-color: #b3e0e0; /* Light teal hover effect */
+}
+
+#attachment-input {
+  display: none;
+}
+
+.file-item {
+  font-size: 14px;
+  color: #666666; /* Slightly lighter gray for file items */
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+/* Remove dropdown arrow */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   
+@-webkit-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+@media(max-width: 767px) {
+  #mobiriseBanner.container-banner {
+    height: 12rem;
+  }
+  #mobiriseBanner .banner {
+    min-height: 12rem;
+  }
+  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-o-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+
+  @-webkit-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-moz-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+}
+</style>
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-utDfZqFezR" once="menu" id="menu-5-utDfZqFezR">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="https://r.mobirisesite.com/875197/assets/images/g19a635698b1b94ea78769e054825-h_m37du4g9.png" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="#">Communion</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'index' %}" id="homeLink">
+                  Home
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'help_alert' %}" id="helpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="helpDropdown">
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}">Help Request form</a></li>
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}#news-1-utwSmHJyLO">Help Request list</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'event_list' %}" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'event_list' %}">Upcoming Events</a></li>
+                  <li><a class="dropdown-item" href="{% url 'event_create' %}">Create Events</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'social_issues_groups_list' %}" id="groupsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Groups
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="groupsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'social_issues_groups_list' %}">Discussion Groups</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_social_issues_group' %}">Create a Discussion Group</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'community_leaders_list' %}" id="leadersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Leaders
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="leadersDropdown">
+                  <li><a class="dropdown-item" href="{% url 'community_leaders_list' %}">View Leaders</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_community_leader' %}">Add Leader</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'settings' %}" id="settingsLink">
+                  Settings
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'profile' %}" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                  <li><a class="dropdown-item" href="{% url 'profile' %}">View Profile</a></li>
+                  <li><a class="dropdown-item" href="{% url 'profile_edit' %}">Edit Profile</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-black display-4" href="{% url 'login' %}" id="settingsLink">
+                Login
+            </a>
+        </li>
+      </ul>
+				<div class="navbar-buttons mbr-section-btn">
+					<a class="btn btn-primary display-4" href="#">Get Started</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-utDfZqGEoS mbr-halfscreen" data-bg-video="https://www.youtube.com/embed/U1-tNfr9P8k?autoplay=1&amp;loop=1&amp;playlist=U1-tNfr9P8k&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="hero-16-utDfZqGEoS">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <strong>Talk It Out</strong>
+        </h1>
+        
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">Dive into discussions that spark ideas and ignite passions!</p>
+        <div class="mbr-section-btn">
+          <a class="btn btn-white-outline display-7" href="#">Join Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="discussion-container" id="discussion-section"> 
+  <h1 style="text-align: center; font-size: 50px; margin: 30px; color: #333; font-weight: bolder;">Welcome to Discussion Group of <br> {{ group.name }}</h1>
+  <div class="container">
+    <!-- Chat Header -->
+    <div class="group-info">
+      {% if group.image %}
+        <img src="{{ group.image }}" alt="{{ group.name }} Image" class="group-image" style="width: 100%; height: 600px;">
+      {% else %}
+        <img src="{% static 'events/images/placeholder.png' %}" alt="Placeholder Image" class="group-image">
+      {% endif %}
+      <h1 class="group-name">{{ group.name }} - Conversations</h1>
+      <p class="group-topic"><strong>Topic:</strong> {{ group.topic }}</p>
+      <p class="group-description"><strong>Description:</strong> {{ group.description }}</p>
+    </div>
+
+    <!-- Chat Messages Section -->
+    <div class="conversations-list">
+      {% for conversation in conversations %}
+        <div class="conversation-card">
+          <strong class="username">{{ conversation.user_profile.user.username }}</strong>
+          <span class="timestamp">{{ conversation.timestamp|date:"d-m-Y" }}</span>
+          <p class="message-text">{{ conversation.message }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Message Input Form -->
+    <div class="form-container">
+      <form method="POST" class="message-form" enctype="multipart/form-data" action="{% url 'group_conversation_detail' group_id=group.id %}">
+        {% csrf_token %}
+        <div class="input-section">
+          <textarea id="message-input" name="message" placeholder="Type a message..." required></textarea>
+          
+          <!-- Attachment Button -->
+          <label for="attachment-input" class="attachment-btn" aria-label="Attach File">
+            <i class="fas fa-paperclip"></i> <!-- Icon displayed for attachment -->
+          </label>
+          <!-- Hidden File Input -->
+          <input type="file" id="attachment-input" name="attachment" class="attachment-input" style="display: none;" onchange="showAttachmentPreview()">
+          
+          <!-- Emoji Picker Button -->
+          <button type="button" class="emoji-btn" aria-label="Choose Emoji" onclick="toggleEmojiPicker()">
+            <i class="fas fa-smile"></i>
+          </button>
+          
+          <!-- Emoji Picker -->
+          <div id="emoji-picker" class="emoji-picker" style="display:none;">
+            <span onclick="insertEmoji('😊')">😊</span>
+            <span onclick="insertEmoji('😂')">😂</span>
+            <span onclick="insertEmoji('😍')">😍</span>
+            <span onclick="insertEmoji('😢')">😢</span>
+            <span onclick="insertEmoji('😡')">😡</span>
+            <span onclick="insertEmoji('😎')">😎</span>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Send</button>
+        
+        <!-- Attachment Preview -->
+        <div id="attachment-preview" class="attachment-preview"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery07 cid-utDfZqH1xZ" id="gallery-14-utDfZqH1xZ">
+  
+  
+  <div class="container-fluid gallery-wrapper">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/881540/assets/images/photo-1576670159871-dd9d88d3f68b.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/881540/assets/images/photo-1577896851231-70ef18881754.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/881540/assets/images/photo-1573165067541-4cd6d9837902.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/881540/assets/images/photo-1606836591695-4d58a73eba1e.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="people04 cid-utDfZqHibw" id="testimonials-4-utDfZqHibw">
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+					<strong>Cheers</strong>
+				</h3>
+				
+			</div>
+		</div>
+		<div class="row mbr-masonry" data-masonry="{&quot;percentPosition&quot;: true }">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">Chatterbox is where my ideas come alive!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/881540/assets/images/photo-1589571894960-20bbe2828d0a.jpeg" data-slide-to="0" data-bs-slide-to="0" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Emily R.</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">I love the debates! It’s like a mental gym!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/881540/assets/images/photo-1679746584014-fb31d4eb0a5e.jpeg" data-slide-to="4" data-bs-slide-to="4" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Mark T.</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">Best place to unleash my thoughts!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/881540/assets/images/photo-1545803928-04e3f4cdd4ed.jpeg" data-slide-to="5" data-bs-slide-to="5" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Sophie L.</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="gallery10 cid-utDfZqHh7Q" id="features-61-utDfZqHh7Q">
+  
+
+
+  <div class="container-fluid">
+
+      <div class="loop-container">
+        <div class="item display-1" data-linewords="Engaging Discussions * Diverse Perspectives * Real-Time Chats * Expert Insights * Community Driven * Fun Atmosphere *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+
+        <div class="item display-1" data-linewords="Engaging Discussions * Diverse Perspectives * Real-Time Chats * Expert Insights * Community Driven * Fun Atmosphere *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+      </div>
+    
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-utDfZqHD7N mbr-fullscreen" data-bg-video="https://www.youtube.com/embed/zSJkMWJ2Ag8?autoplay=1&amp;loop=1&amp;playlist=zSJkMWJ2Ag8&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="video-5-utDfZqHD7N">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="image02 cid-utDfZqHtlC mbr-fullscreen mbr-parallax-background" id="image-13-utDfZqHtlC">
+    
+    
+    <div class="container">
+        <div class="row"></div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features5 cid-utDfZqIyXA mbr-parallax-background" id="features-33-utDfZqIyXA">
+    
+
+    
+    
+    <div class="container">
+        
+        <div class="row">
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Join Us</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">Dive into discussions that matter to you.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Speak Up</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">Your voice is important—let it be heard!</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Learn Together</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">Share knowledge and gain new insights.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Have Fun</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">Who said discussions can't be entertaining?</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Connect Globally</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">Meet people from all walks of life.</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
+                <div class="item-wrapper">
+                    <div class="card-box align-left">
+                        
+                        <h5 class="card-title mbr-fonts-style display-5">
+                            <strong>Be Inspired</strong>
+                        </h5>
+                        <p class="card-text mbr-fonts-style display-7">Spark creativity through engaging conversations.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="people03 cid-utDfZqI4r3" id="team-1-utDfZqI4r3">
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Chat Champions</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/881540/assets/images/photo-1626899798511-c3eaacb02846.jpeg" alt="" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Max</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Chief Chatter</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/881540/assets/images/photo-1692558588242-57cec1e32bba.jpeg" alt="" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Lily</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Conversation Connoisseur</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                        <img src="https://r.mobirisesite.com/881540/assets/images/photo-1497485692312-a26e1cc30f1d.jpeg" alt="" title="">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Jake</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Dialogue Dynamo</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-lg-3">
+                <div class="item-wrapper">
+                    <div class="item-img mb-3">
+                       <img src="https://r.mobirisesite.com/881540/assets/images/photo-1676385901160-a86dc9ccdfe1.jpeg" alt="" title="" data-slide-to="3" data-bs-slide-to="3">
+                    </div>
+                    <div class="item-content align-left">
+                        <h5 class="item-title mbr-fonts-style display-5">
+                            <strong>Zara</strong>
+                        </h5>
+                        <h6 class="item-subtitle mbr-fonts-style mb-3 display-7">Banter Boss</h6>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="article13 cid-utDfZqIUJ1" id="call-to-action-5-utDfZqIUJ1">
+    
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-md-12 col-lg-10">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <h4 class="card-title mbr-fonts-style display-2">
+                            <strong>Join the Ultimate Discussion Room!</strong>
+                        </h4>
+                        <p class="mbr-text mbr-fonts-style mt-4 display-7">Dive into a world where ideas collide, and conversations spark like fireworks on the Fourth of July! Whether you're a seasoned debater or just someone who loves to chat, this is the place for you. Don't just sit there—jump in and let your voice be heard!</p>
+                        <div class="mbr-section-btn mt-4"><a class="btn btn-primary display-4" href="#">Start the Conversation!</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="list1 cid-utDfZqIbot" id="faq-1-utDfZqIbot">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg-10 m-auto">
+                <div class="content">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-12 content-head">
+                            <div class="mbr-section-head">
+                                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                                    <strong>Curious Minds Want to Know</strong>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bootstrap-accordion_11" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_11" aria-expanded="false" aria-controls="collapse1">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">What topics can we discuss here?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse1_11" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_11">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Anything and everything! From the latest tech trends to the most ridiculous conspiracy theories, we welcome all topics. Just remember, no cat memes—unless they're really funny!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_11" aria-expanded="false" aria-controls="collapse2">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">How do I join a discussion?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse2_11" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_11">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Simply click the 'Start the Conversation!' button and dive right in. It's as easy as pie—unless you're baking a pie, then it's a bit more complicated.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_11" aria-expanded="false" aria-controls="collapse3">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Can I invite friends to join?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse3_11" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_11">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Absolutely! The more, the merrier! Bring your friends, your enemies, or even that random guy from the coffee shop. Everyone's welcome!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_11" aria-expanded="false" aria-controls="collapse4">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Is there a code of conduct?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse4_11" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_11">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Yes, be respectful, be funny, and for the love of all that is good, no trolling! We want lively debates, not internet wars.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_11" aria-expanded="false" aria-controls="collapse5">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">What if I have a crazy idea?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse5_11" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_11">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Bring it on! Crazy ideas are the spice of life. Just be prepared for some wild discussions!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features10 cid-utDfZqJZKf" id="metrics-2-utDfZqJZKf">
+  
+
+  
+  
+  <div class="container">
+    
+    <div class="row justify-content-center">
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>1,000+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Active Members</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>500+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Topics Discussed</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>10,000+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Messages Sent</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="social4 cid-utDfZqJrW4" id="follow-us-1-utDfZqJrW4">
+    
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+                    <strong>Join the Conversation!</strong>
+                </h3>
+                <div class="social-list align-center">
+                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="#">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-twitter m-2" href="#" target="_blank">
+                        <span class="socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-instagram m-2" href="#" target="_blank">
+                        <span class="socicon-instagram socicon"></span>
+                    </a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="iconfont-wrapper bg-tiktok m-2" href="#" target="_blank">
+                        <span class="socicon-tiktok socicon"></span>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-utDfZqJBWr" id="contact-form-2-utDfZqJBWr">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Get in Touch!</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="0z8csC6k+pTeglH3gl05/BwNqbIGUn393lOPMLCwBDzSTysLiBmOZC5zy9Ov/usfgqiOBelKf7krAnkLX+bprPRhHTSZnQ7faLVQNVG9s0ASAFdAJrQ1LTklN5tCqd3P">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-contact-form-2-utDfZqJBWr">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-contact-form-2-utDfZqJBWr">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-contact-form-2-utDfZqJBWr"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Send It!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts02 map1 cid-utDfZqJAca" id="contacts-2-utDfZqJAca">
+
+    
+
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Contact Us</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="card col-12 col-md-12 col-lg-6">
+                <div class="card-wrapper">
+                    <div class="text-wrapper">
+                        
+                        <ul class="list mbr-fonts-style display-7">
+                            <li class="mbr-text item-wrap">
+                            Phone:                                
+                            <a href="tel:1-800-555-0199" class="text-black">1-800-555-0199</a></li>
+
+                            <li class="mbr-text item-wrap">WhatsApp: 
+                            <a href="tel:1-800-555-0199" class="text-black">1-800-555-0199</a></li> 
+
+                            <li class="mbr-text item-wrap">                            
+                            Email:
+                            <a href="mailto:info@discussionroom.com" class="text-black">info@communionapp.com</a>                        
+                            </li>
+
+                            <li class="mbr-text item-wrap">                        
+                            Address:
+                             India
+                            </li>
+
+                            <li class="mbr-text item-wrap">
+                            Working Hours:
+                            Mon-Fri: 9am - 5pm
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrapper col-md-12 col-lg-6">
+                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCt1265A4qvZy9HKUeA8J15AOC4SrCyZe4&amp;q=%20India" allowfullscreen=""></iframe></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer3 cid-utDfZqJPAd" once="footers" id="footer-3-utDfZqJPAd">
+
+        
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="row-links">
+                <ul class="header-menu">
+                  
+                  
+                  
+                  
+                <li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Home</a>
+                  </li><li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">About</a>
+                  </li><li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Topics</a>
+                  </li><li class="header-menu-item mbr-fonts-style display-5">
+                    <a href="#" class="text-white">Contact</a>
+                  </li></ul>
+              </div>
+
+            <div class="col-12 mt-4">
+                <div class="social-row">
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-facebook display-7"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon-twitter socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon-instagram socicon"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-linkedin"></span>
+                        </a>
+                    </div>
+                    <div class="soc-item">
+                        <a href="#" target="_blank">
+                            <span class="mbr-iconfont socicon socicon-twitch"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-5">
+                <p class="mbr-fonts-style copyright display-7">© 2024 Communion App. Let's Chat!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://r.mobirisesite.com/881540/assets/web/assets/jquery/jquery.min.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/parallax/jarallax.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/smoothscroll/smooth-scroll.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/ytplayer/index.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/dropdown/js/navbar-dropdown.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/vimeoplayer/player.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/scrollgallery/scroll-gallery.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/masonry/masonry.pkgd.min.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/imagesloaded/imagesloaded.pkgd.min.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/mbr-switch-arrow/mbr-switch-arrow.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/theme/js/script.js?rnd=1731155146071"></script>
+  <script src="https://r.mobirisesite.com/881540/assets/formoid.min.js?rnd=1731155146071"></script>
+  <script>
+    // Toggle emoji picker visibility
+    function toggleEmojiPicker() {
+      const emojiPicker = document.getElementById('emoji-picker');
+      emojiPicker.style.display = (emojiPicker.style.display === 'none' || emojiPicker.style.display === '') ? 'flex' : 'none';
+    }
+    
+    // Insert selected emoji into the message input
+    function insertEmoji(emoji) {
+      const messageInput = document.getElementById('message-input');
+      messageInput.value += emoji;
+      toggleEmojiPicker();  // Close the emoji picker after selecting an emoji
+    }
+  
+    // Close emoji picker if clicked outside
+    window.onclick = function(event) {
+      const emojiPicker = document.getElementById('emoji-picker');
+      const emojiButton = document.querySelector('.emoji-btn');  // Ensure it's the correct emoji button
+      if (!emojiPicker.contains(event.target) && !emojiButton.contains(event.target)) {
+        emojiPicker.style.display = 'none';
+      }
+    };
+  
+    // Handle file selection for attachments and display preview
+    document.getElementById('attachment-input').addEventListener('change', function() {
+      const fileInput = this;
+      const file = fileInput.files[0];  // Get the first file
+      const previewContainer = document.getElementById('attachment-preview');
+      
+      // Clear previous attachments
+      previewContainer.innerHTML = '';
+  
+      if (file) {
+        const reader = new FileReader();
+      
+        reader.onload = function(e) {
+          previewContainer.innerHTML = '';  // Clear previous preview
+          
+          // Check if the file is an image
+          if (file.type.startsWith('image')) {
+            const img = document.createElement('img');
+            img.src = e.target.result;  // Set image source to the result
+            img.classList.add('attachment-preview-image');  // Add custom styles
+            previewContainer.appendChild(img);  // Append image to preview container
+          }
+          // Check if the file is a video
+          else if (file.type.startsWith('video')) {
+            const video = document.createElement('video');
+            video.src = e.target.result;
+            video.controls = true;  // Add controls for video playback
+            video.classList.add('attachment-preview-video');  // Add custom styles
+            previewContainer.appendChild(video);
+          }
+          // Handle other file types (e.g., documents, audio)
+          else {
+            const fileElement = document.createElement('div');
+            fileElement.textContent = `Selected file: ${file.name}`;  // Display the file name
+            previewContainer.appendChild(fileElement);
+          }
+        };
+  
+        reader.readAsDataURL(file);  // Start reading the file as a data URL
+      }
+    });
+  
+    // Function to handle form submission with attachment
+    function uploadAttachment(event) {
+      event.preventDefault();  // Prevent the form from submitting normally
+  
+      const form = document.getElementById('conversation-form');
+      const formData = new FormData(form);  // Form data includes text and file attachments
+  
+      // Send the form data (including files) using AJAX
+      const xhr = new XMLHttpRequest();
+      xhr.open('POST', '/path/to/upload/', true);  // Update URL to your server endpoint
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          alert('Attachment uploaded successfully!');
+          // Handle the server response here if necessary (e.g., show success message, update UI)
+        } else {
+          alert('Error uploading attachment!');
+        }
+      };
+      xhr.send(formData);  // Send form data
+    }
+  
+    // Add event listener to the form submission button
+    document.getElementById('send-button').addEventListener('click', uploadAttachment);
+  </script>
+    
+</body>
+</html>

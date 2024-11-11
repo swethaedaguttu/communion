@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Requests</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Basic styling for the donation list page */
+        html,
+        body {
+            height: 100%; /* Ensure body takes full height */
+            margin: 0;
+            padding: 0;
+            display: flex; /* Use flexbox layout */
+            flex-direction: column; /* Stack items vertically */
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F9F6ED; /* Soft beige background */
+            color: #2C3E50; /* Dark slate gray text */
+        }
+
+        .navbar {
+            background-color: #2C6E6E; /* Deep teal navbar */
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #ffffff !important; /* White text */
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto; /* Centering container */
+            padding: 30px; /* More padding for better spacing */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+            border-radius: 15px; /* More rounded corners */
+            background-color: white; /* White background for the container */
+            flex-grow: 1; /* Allow the container to grow and take available space */
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Larger heading */
+            margin-bottom: 20px; /* Space below the heading */
+            text-align: center; /* Center-align heading */
+            color: #2C6E6E; /* Deep teal color for the heading */
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+            cursor: pointer; /* Change cursor to indicate clickable rows */
+        }
+
+        th {
+            background-color: #2C6E6E; /* Deep teal for header */
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light gray for even rows */
+        }
+
+        .btn-custom {
+            background-color: #FF6F61; /* Soft coral button */
+            color: #ffffff; /* White text on buttons */
+            border-radius: 25px; /* Rounded button */
+            transition: background-color 0.3s, transform 0.2s; /* Animation */
+            padding: 10px 20px; /* Padding for better button size */
+            font-size: 1.1rem; /* Slightly larger font size */
+            border: none; /* No border */
+            display: inline-block; /* Inline block for proper spacing */
+            text-align: center; /* Center text in button */
+        }
+
+        .btn-custom:hover {
+            background-color: #A7D5D5; /* Light teal hover color */
+            color: #2C3E50; /* Dark text on hover */
+            transform: translateY(-2px); /* Lift effect on hover */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #2C6E6E; /* Deep teal footer */
+            color: #ffffff; /* White footer text */
+            padding: 20px 0;
+            width: 100%;
+            text-align: center; /* Center align footer text */
+        }
+
+        /* Additional Styling */
+        p {
+            text-align: center;
+            margin-top: 10px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="{% url 'index' %}">InterfaithConnect</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'event_list' %}">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'event_create' %}">Create Event</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'community_leaders_list' %}">Leaders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'social_issues_groups_list' %}">Groups</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 80px;">
+        <h1>Donation Requests</h1>
+        <p>Here are the details of donation requests:</p>
+
+        {% if donations %}
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Description</th>
+                        <th>Upi_id</th>
+                        <th>Payment_Details</th>
+                        <th>Amount Requested</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for donation in donations %}
+                    <tr>
+                        <td>{{ forloop.counter }}</td>
+                        <td>{{ donation.name }}</td>
+                        <td>{{ donation.email }}</td>
+                        <td>{{ donation.description }}</td>
+                        <td>{{ donation.upi_id }}</td>
+                        <td>{{ donation.payment_details }}</td>
+                        <td>₹{{ donation.amount_requested }}</td>
+                        <td>{{ donation.status }}</td>
+                        <td>
+                            <a href="{% url 'donation_success' donation.id %}" class="btn btn-link">View Details</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p>You have not made any donation requests yet. However, if you know of any individuals or organizations in need, please consider suggesting them! Together, we can make a difference.</p>
+        {% endif %}
+
+        <a href="{% url 'donation_page' %}" class="btn btn-custom">Request a New Donation</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 InterfaithConnect. All Rights Reserved.</p>
+        <p><a href="{% url 'about_us' %}" class="text-white">About Us</a> | <a href="{% url 'contact' %}" class="text-white">Contact</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7f2l8pFl5l2V1z1xjQZ2AT/J7D6xIvJwG61FVg4fMccBLcV9XX7Mo08KfE3Ym5kV" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-CL2X87z7uOThUJcbEwo6OehvHcM0e+SIiN2I3JFEka4yYdRT8L12xgmbD6ZknuB2" crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Toggle the details row for donation requests
+        document.querySelectorAll('.donation-row').forEach(row => {
+            row.addEventListener('click', () => {
+                const detailsRow = document.getElementById(`details-${row.dataset.id}`);
+                if (detailsRow.style.display === 'none' || detailsRow.style.display === '') {
+                    detailsRow.style.display = 'table-row'; // Show details
+                } else {
+                    detailsRow.style.display = 'none'; // Hide details
+                }
+            });
+        });
+
+        // Toggle the navbar visibility on small screens
+        const navbarToggleBtn = document.querySelector('.navbar-toggler');
+        navbarToggleBtn.addEventListener('click', () => {
+            const navbarNav = document.getElementById('navbarNav');
+            if (navbarNav.style.display === 'none' || navbarNav.style.display === '') {
+                navbarNav.style.display = 'block'; // Show navbar
+            } else {
+                navbarNav.style.display = 'none'; // Hide navbar
+            }
+        });
+
+        // Optional: Close the navbar when a nav link is clicked (for small screens)
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarNav = document.getElementById('navbarNav');
+                navbarNav.style.display = 'none'; // Hide navbar
+            });
+        });
+    </script>
+</body>
+
+</html>

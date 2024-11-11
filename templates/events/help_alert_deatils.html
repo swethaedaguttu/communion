@@ -1,0 +1,1250 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://r.mobirisesite.com/877954/assets/images/photo-1707146177016-9906a2505a72.jpeg" type="image/x-icon">
+  <meta name="description" content="This page allows users to submit help requests and connect directly with those who can assist them. Get the help you need today!">
+  <title>Help Request Form</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/bootstrap/css/bootstrap.min.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/parallax/jarallax.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/dropdown/css/style.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/socicon/css/styles.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/theme/css/style.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/recaptcha.css?rnd=1731060881019">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/css/mbr-additional.css?rnd=1731060881019" type="text/css">
+  
+  
+  
+  
+
+
+<style>
+.navbar-fixed-top {
+  top: auto;
+}
+#mobiriseBanner.container-banner {
+  height: 8rem;
+  opacity: 1;
+  -webkit-animation: 4s linear animationHeight;
+  -moz-animation: 4s linear animationHeight;
+    -o-animation: 4s linear animationHeight;
+       animation: 4s linear animationHeight;
+       transition: all  0.5s;
+}
+#mobiriseBanner.container-banner.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s linear animationClosing;
+  -moz-animation:  0.5s linear animationClosing;
+    -o-animation:  0.5s linear animationClosing;
+       animation:  0.5s linear animationClosing;
+}
+#mobiriseBanner .banner {
+  min-height: 8rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  opacity:1;
+  -webkit-animation: 4s linear animationBanner;
+  -moz-animation: 4s linear animationBanner;
+    -o-animation: 4s linear animationBanner;
+       animation: 4s linear animationBanner;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mobiriseBanner .banner p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+#mobiriseBanner .buy-license {
+  text-decoration: underline;
+}
+#mobiriseBanner .banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+.mbr-halfscreen {
+  height: 60vh; /* This will set the section height to 50% of the viewport height */
+}
+/* Remove dropdown arrow */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+  /* Submission List */
+  /* Submission List Container */
+  .submission-list {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+  }
+
+  .submission-list h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  /* Submission Item */
+  .submission-item p {
+    font-size: 16px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: #555;
+  }
+
+  .submission-item strong {
+    color: #007bff;
+  }
+
+  /* Image Container */
+  .image-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .image-container img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Chat Button */
+  .chat-button {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .chat-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* Responsive Design for Mobile */
+  @media (max-width: 768px) {
+    .submission-list {
+      padding: 20px;
+      max-width: 100%;
+    }
+
+    .submission-item p {
+      font-size: 14px;
+    }
+
+    .chat-button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+/* Modal Chat Box */
+.modal-content {
+  border-radius: 15px;
+  background-color: #f4f7fa;
+  padding: 20px;
+  max-width: 450px;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Header */
+.modal-header {
+  border-bottom: 2px solid #e1e7ee;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+  border-radius: 15px 15px 0 0;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.btn-close {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+.btn-close:hover {
+  color: #0056b3;
+}
+
+/* Chat Box */
+#chatBox {
+  max-height: 350px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Chat Message */
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* User Message Style */
+.chat-message.user-message {
+  justify-content: flex-end;
+}
+
+.chat-message.user-message .message {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 18px 18px 0 18px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* Other Message Style */
+.chat-message .message {
+  background-color: #e5e5e5;
+  color: #333;
+  padding: 12px 18px;
+  border-radius: 18px 18px 18px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* Image in Messages */
+.chat-message .message img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Images */
+.chat-message .message img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Tooltip on Hover */
+.chat-message .message img:hover::after {
+  content: "Click to view full image";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+/* Chat Input */
+#chatInput {
+  width: calc(100% - 50px);
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+#chatInput:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Send Button */
+#sendChat {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#sendChat:hover {
+  background-color: #0056b3;
+}
+/* Chat Input Container */
+.chat-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align elements at the start of the container */
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px; /* Space between the image upload and chat input */
+}
+
+/* Attachment Button */
+.attachment-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.attachment-btn:hover {
+  background-color: #0056b3;
+}
+
+.attachment-btn i {
+  font-size: 20px;
+}
+
+/* Image Preview Styling */
+.image-upload-preview {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.image-upload-preview img {
+  max-width: 100px;
+  height: auto;
+  margin: 0 5px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* Chat Input Textarea */
+#chatInput {
+  width: calc(100% - 50px); /* Adjust width to account for the attachment button */
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  padding-left: 45px; /* Add padding to create space for attachment button */
+}
+
+#chatInput:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Send Button */
+#sendChat {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+#sendChat:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Footer Flexbox */
+.modal-footer {
+  display: flex;
+  justify-content: space-between; /* Align buttons in the footer */
+  align-items: center;
+  width: 100%;
+}
+
+/* Chat Box and Messages */
+#chatBox {
+  max-height: 350px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  padding-right: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+/* Chat Message Style */
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* User Message Style */
+.chat-message.user-message {
+  justify-content: flex-end;
+}
+
+.chat-message.user-message .message {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 18px 18px 0 18px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* Other Message Style */
+.chat-message .message {
+  background-color: #e5e5e5;
+  color: #333;
+  padding: 12px 18px;
+  border-radius: 18px 18px 18px 0;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+/* Randomized Message Backgrounds */
+.chat-message:nth-child(even) .message {
+  background-color: #f0f8ff; /* Light blue for even messages */
+}
+
+.chat-message:nth-child(odd) .message {
+  background-color: #f8f9fa; /* Light grey for odd messages */
+}
+
+/* Image in Messages */
+.chat-message .message img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect on Images */
+.chat-message .message img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   
+@-webkit-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+@media(max-width: 767px) {
+  #mobiriseBanner.container-banner {
+    height: 12rem;
+  }
+  #mobiriseBanner .banner {
+    min-height: 12rem;
+  }
+  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-o-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+
+  @-webkit-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-moz-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+}
+</style>
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-utwSmHFR8Y" once="menu" id="menu-5-utwSmHFR8Y">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="https://r.mobirisesite.com/875197/assets/images/g19a635698b1b94ea78769e054825-h_m37du4g9.png" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="#">Communion</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'index' %}" id="homeLink">
+                  Home
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'help_alert' %}" id="helpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="helpDropdown">
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}">Help Request form</a></li>
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}#news-1-utwSmHJyLO">Help Request list</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'event_list' %}" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'event_list' %}">Upcoming Events</a></li>
+                  <li><a class="dropdown-item" href="{% url 'event_create' %}">Create Events</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'social_issues_groups_list' %}" id="groupsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Groups
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="groupsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'social_issues_groups_list' %}">Discussion Groups</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_social_issues_group' %}">Create a Discussion Group</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'community_leaders_list' %}" id="leadersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Leaders
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="leadersDropdown">
+                  <li><a class="dropdown-item" href="{% url 'community_leaders_list' %}">View Leaders</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_community_leader' %}">Add Leader</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'settings' %}" id="settingsLink">
+                  Settings
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'profile' %}" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                  <li><a class="dropdown-item" href="{% url 'profile' %}">View Profile</a></li>
+                  <li><a class="dropdown-item" href="{% url 'profile_edit' %}">Edit Profile</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-black display-4" href="{% url 'login' %}" id="settingsLink">
+                Login
+            </a>
+        </li>
+      </ul>
+
+				
+				<div class="navbar-buttons mbr-section-btn">
+					<a class="btn btn-primary display-4" href="#help-request-form">Get Help</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-utwSmHHwOY mbr-halfscreen" data-bg-video="https://www.youtube.com/embed/sHaBr-Tlm7Q?autoplay=1&amp;loop=1&amp;playlist=sHaBr-Tlm7Q&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="hero-15-utwSmHHwOY">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <strong>Need Help?</strong>
+        </h1>
+        
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">We're here to connect you with the right people fast!</p>
+        <div class="mbr-section-btn">
+          <a class="btn btn-white-outline display-7" href="#news-1-utwSmHJyLO">Start Now</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <strong style="color: #333; padding-left: 340px;">Help Request Details </strong>
+        </h1>
+        
+
+  <div class="submission-list" id="submissionList">
+    <div class="submission-item">
+      <p><strong>Username:</strong> {{ help_alert.username }}</p>
+      <p><strong>Need of Help:</strong> {{ help_alert.need_help }}</p>
+      <p><strong>Description:</strong> {{ help_alert.description }}</p>
+      <p><strong>Contact Details:</strong> {{ help_alert.contact_details }}</p>
+      <p><strong>Submitted On:</strong> {{ help_alert.created_at }}</p>
+
+      <!-- Image Display -->
+      {% if help_alert.image %}
+        <div class="image-container">
+          <p><strong>Uploaded Image:</strong></p>
+          <img src="{{ help_alert.image.url }}" alt="Help Request Image" class="img-fluid">
+        </div>
+      {% else %}
+        <p>No image uploaded for this request.</p>
+      {% endif %}
+
+      <!-- Chat Button -->
+      <button class="btn btn-primary chat-button" data-bs-toggle="modal" data-bs-target="#chatModal">
+        Chat Now
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Chat Box -->
+<div class="modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="chatModalLabel">Live Chat</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div id="chatBox">
+          <!-- Chat messages will be dynamically inserted here -->
+        </div>
+
+        <!-- Chat Input Area and Image Upload -->
+        <div class="chat-input-container">
+
+          <!-- Chat Input Textarea -->
+          <textarea class="form-control" id="chatInput" placeholder="Type your message..."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="d-flex justify-content-between w-100">
+          <button type="button" class="btn btn-secondary" id="sendChat">Send</button>
+          <!-- Attachment Button -->
+          <label for="imageUpload" class="btn btn-secondary attachment-btn">
+            <i class="bi bi-paperclip"></i> Choose Image
+          </label>
+          <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+          <div id="imagePreview" class="image-upload-preview"></div> <!-- Image Preview -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section data-bs-version="5.1" class="features10 cid-utwSmHHWHR" id="metrics-2-utwSmHHWHR">
+  
+
+  
+  
+  <div class="container">
+    
+    <div class="row justify-content-center">
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>100+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Requests Daily</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>50+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Experts Available</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>24/7</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Support Guaranteed</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section data-bs-version="5.1" class="gallery07 cid-utwSmHIY3i" id="gallery-16-utwSmHIY3i">
+  
+  
+  <div class="container-fluid gallery-wrapper">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head mb-5">
+          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>Help Requests Gallery</strong>
+          </h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877954/assets/images/photo-1634839593004-667d278bac49.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877954/assets/images/photo-1723433892471-62f113c8c9a0.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877954/assets/images/photo-1724995872846-6b52f7e81691.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877954/assets/images/photo-1579966434689-366396b4963c.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="people04 cid-utwSmHI0OQ" id="testimonials-4-utwSmHI0OQ">
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+					<strong>Cheers!</strong>
+				</h3>
+				
+			</div>
+		</div>
+		<div class="row mbr-masonry" data-masonry="{&quot;percentPosition&quot;: true }">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">This site saved my life!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877954/assets/images/photo-1677520338280-664ae23816eb.jpeg" data-slide-to="0" data-bs-slide-to="0" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Emily Johnson</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">I got help faster than I expected!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877954/assets/images/photo-1586185018558-ea8f4b4c514f.jpeg" data-slide-to="4" data-bs-slide-to="4" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Michael Smith</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">Best help request platform ever!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877954/assets/images/photo-1676385901160-31e1b9e1c0c7.jpeg" data-slide-to="5" data-bs-slide-to="5" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Sarah Connor</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="gallery10 cid-utwSmHJqhu" id="features-61-utwSmHJqhu">
+  
+
+
+  <div class="container-fluid">
+
+      <div class="loop-container">
+        <div class="item display-1" data-linewords="Instant Help * User Friendly * Chat Directly * 24/7 Support * Fast Responses * Community Driven *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+
+        <div class="item display-1" data-linewords="Instant Help * User Friendly * Chat Directly * 24/7 Support * Fast Responses * Community Driven *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+      </div>
+    
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="header09 cid-utwSmHJFOk" id="call-to-action-7-utwSmHJFOk">
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h1 class="mbr-section-title mbr-fonts-style mb-4 display-1">
+                    <strong>Need Help? Get Started Now!</strong>
+                </h1>
+                <p class="mbr-fonts-style mbr-text mb-4 display-7">Join our community and get the help you deserve!</p>
+                <div class="mbr-section-btn"><a class="btn btn-primary display-7" href="#help-request-form">Submit Your Request</a> 
+                    <a class="btn btn-secondary display-7" href="#news-1-utwSmHJyLO">Browse Help Requests</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="list05 cid-utwSmHJR5i" id="faq-3-utwSmHJR5i">
+    
+    <div class="container">
+        <div class="col-12 mb-5 content-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Help Request FAQs</strong>
+            </h3>
+            
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-12 col-lg-8">
+                <div class="item features-without-image col-12 active">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>What is a help request?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">A help request is a plea for assistance!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How do I submit a request?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Fill out the form and hit submit!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Can I chat with helpers?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Absolutely! Connect directly with helpers!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                  <div class="item-wrapper">
+                      <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                          <strong>Is my information secure?</strong></h5>
+                      <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Yes, we prioritize your privacy!</p>
+                  </div>
+              </div>
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                    <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                        <strong>What if I need urgent help?</strong></h5>
+                    <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Mark it urgent and get quick responses!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+<section data-bs-version="5.1" class="social4 cid-utwSmHKS6N" id="follow-us-1-utwSmHKS6N">
+    
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+                    <strong>Join Our Community</strong>
+                </h3>
+                <div class="social-list align-center">
+                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="#">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-twitter m-2" href="#" target="_blank">
+                        <span class="socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-instagram m-2" href="#" target="_blank">
+                        <span class="socicon-instagram socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-tiktok m-2" href="#" target="_blank">
+                        <span class="socicon-tiktok socicon"></span>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-utwSmHKIPQ" id="contact-form-2-utwSmHKIPQ">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Need Help? Reach Out!</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="NeZwvL5RNo6etB26arRvzpVhF068o86SCaSgWsD0E1HxfznUD4pjAKBBwrupgjjaz1kppNzVftUh/NxZcJe5fMh/FeD9jk+pDG19e71CIi6CS43eZQraYIJhaiAYxu13">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-contact-form-2-utwSmHKIPQ">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-contact-form-2-utwSmHKIPQ">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-contact-form-2-utwSmHKIPQ"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Send It!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts03 cid-utwSmHKggv" id="contacts-11-utwSmHKggv">
+  
+
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="col-12 col-md-12">
+          <h5 class="mbr-section-title mbr-fonts-style mt-0 mb-4 display-2">
+            <strong>Get in Touch</strong>
+          </h5>
+          <p class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-7">
+            Phone: 1-800-555-0199
+            <br>Help Request Form: info@communionapp.com
+            <br>Help Request Form:  India
+            <br>Working Hours: Mon-Fri: 9 AM - 5 PM
+          </p> 
+
+          
+        </div>
+      </div>
+        <div class="col-lg-8 side-features">
+        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="footer4 cid-utwSmHMmy5" once="footers" id="footer-4-utwSmHMmy5">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">© 2024 Communion App. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://r.mobirisesite.com/877954/assets/web/assets/jquery/jquery.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/parallax/jarallax.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/smoothscroll/smooth-scroll.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/ytplayer/index.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/dropdown/js/navbar-dropdown.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/vimeoplayer/player.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/scrollgallery/scroll-gallery.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/masonry/masonry.pkgd.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/imagesloaded/imagesloaded.pkgd.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/theme/js/script.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/formoid.min.js?rnd=1731060881019"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Ensure DOM is fully loaded before binding event listeners
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // Handle form submission (Help request form)
+      const notification = document.getElementById("notification");
+  
+      document.getElementById("helpForm")?.addEventListener("submit", function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        fetch("{% url 'help_alert' %}", { 
+          method: "POST",
+          body: formData
+        })
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
+        .then(data => {
+          if (data.status === 'success') {
+            // Show notification
+            notification.classList.remove("hidden");
+  
+            // Append new submission to the list
+            const newSubmission = document.createElement('div');
+            newSubmission.className = 'submission-item';
+            newSubmission.innerHTML = `
+              <p><strong>Username:</strong> ${data.request.username}</p>
+              <p><strong>Need of Help:</strong> ${data.request.need_help}</p>
+              <p><strong>Description:</strong> ${data.request.description}</p>
+              <p><strong>Contact Details:</strong> ${data.request.contact_details}</p>
+              <p><strong>Submitted On:</strong> ${data.request.created_at}</p>
+            `;
+            document.getElementById('submissionList').appendChild(newSubmission);
+            this.reset(); // Reset the form
+          }
+        })
+        .catch(error => {
+          console.error('There was a problem with the fetch operation:', error);
+        });
+      });
+  
+      // Handle sending chat messages
+      const sendChatButton = document.getElementById('sendChat');
+      if (sendChatButton) {
+        sendChatButton.addEventListener('click', function () {
+          const chatInput = document.getElementById('chatInput');
+          const message = chatInput.value.trim();
+          
+          if (message) {
+            const chatBox = document.getElementById('chatBox');
+            const messageElement = document.createElement('p');
+            messageElement.classList.add('user-message');
+            messageElement.textContent = message;
+  
+            // Append the new message
+            chatBox.appendChild(messageElement);
+  
+            // Clear the input field after sending
+            chatInput.value = '';
+  
+            // Scroll to the bottom of the chat box
+            chatBox.scrollTop = chatBox.scrollHeight;
+          }
+        });
+      }
+  
+      // Focus on the chat input when the modal is opened
+      const chatModal = document.getElementById('chatModal');
+      if (chatModal) {
+        chatModal.addEventListener('shown.bs.modal', function () {
+          document.getElementById('chatInput').focus();
+        });
+      }
+    });
+      // Function to append a new chat message to the chat box
+  document.getElementById("sendChat").addEventListener("click", function () {
+    var chatInput = document.getElementById("chatInput").value;
+    var imageInput = document.getElementById("imageInput").files[0];
+
+    if (chatInput.trim() !== "" || imageInput) {
+      var messageBox = document.createElement("div");
+      messageBox.classList.add("chat-message", "user-message");
+
+      var messageContent = document.createElement("div");
+      messageContent.classList.add("message");
+
+      // If there is text, append it to the message
+      if (chatInput.trim() !== "") {
+        messageContent.textContent = chatInput;
+      }
+
+      // If there is an image, display it in the message
+      if (imageInput) {
+        var imgElement = document.createElement("img");
+        imgElement.src = URL.createObjectURL(imageInput);
+        imgElement.alt = "Chat Image";
+        imgElement.style.maxWidth = "200px";  // Adjust image size as needed
+        imgElement.style.marginTop = "10px";
+        messageContent.appendChild(imgElement);
+      }
+
+      var timestamp = document.createElement("div");
+      timestamp.classList.add("timestamp");
+      timestamp.textContent = new Date().toLocaleTimeString();
+
+      messageBox.appendChild(messageContent);
+      messageBox.appendChild(timestamp);
+
+      // Append to chat box
+      document.getElementById("chatBox").appendChild(messageBox);
+
+      // Clear the input box and image field
+      document.getElementById("chatInput").value = "";
+      document.getElementById("imageInput").value = "";
+
+      // Scroll to the latest message
+      document.getElementById("chatBox").scrollTop = document.getElementById("chatBox").scrollHeight;
+    }
+  });
+    // Handle image upload and preview
+    const imageUploadInput = document.getElementById('imageUpload');
+  const imagePreviewContainer = document.getElementById('imagePreview');
+
+  imageUploadInput.addEventListener('change', function () {
+    const file = imageUploadInput.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const img = document.createElement('img');
+        img.src = e.target.result; // Set the source of the image to the uploaded file
+        img.alt = 'Selected Image';
+        img.style.maxWidth = '100px'; // Limit the preview image size
+        img.style.borderRadius = '8px';
+        img.style.marginTop = '10px';
+        imagePreviewContainer.innerHTML = ''; // Clear any previous preview
+        imagePreviewContainer.appendChild(img);
+      };
+      reader.readAsDataURL(file); // Read the image file as a DataURL
+    }
+  });
+
+  // Handle sending chat messages with or without images
+  document.getElementById('sendChat').addEventListener('click', function () {
+    const chatInput = document.getElementById('chatInput');
+    const message = chatInput.value.trim();
+    const chatBox = document.getElementById('chatBox');
+    const imagePreview = imagePreviewContainer.querySelector('img');
+    
+    if (message || imagePreview) {
+      const messageElement = document.createElement('div');
+      messageElement.classList.add('chat-message');
+      const messageText = document.createElement('p');
+      
+      if (message) {
+        messageText.textContent = message;
+        messageElement.appendChild(messageText);
+      }
+
+      if (imagePreview) {
+        const messageImage = document.createElement('img');
+        messageImage.src = imagePreview.src; // Use the preview image as the message image
+        messageImage.style.maxWidth = '200px'; // Adjust size for the message
+        messageElement.appendChild(messageImage);
+      }
+
+      // Append the message to the chat box
+      chatBox.appendChild(messageElement);
+
+      // Clear the chat input and image preview after sending
+      chatInput.value = '';
+      imagePreviewContainer.innerHTML = '';
+
+      // Scroll to the bottom of the chat box
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  });
+
+  // Focus on the chat input when the modal is opened
+  const chatModal = document.getElementById('chatModal');
+  chatModal.addEventListener('shown.bs.modal', function () {
+    document.getElementById('chatInput').focus();
+  });
+
+
+  </script>
+  
+  
+  
+
+</body>
+</html>

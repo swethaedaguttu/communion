@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://r.mobirisesite.com/877954/assets/images/photo-1707146177016-9906a2505a72.jpeg" type="image/x-icon">
+  <meta name="description" content="This page allows users to submit help requests and connect directly with those who can assist them. Get the help you need today!">
+  <title>Communion-Settings</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/bootstrap/css/bootstrap.min.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/parallax/jarallax.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/dropdown/css/style.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/socicon/css/styles.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/theme/css/style.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/recaptcha.css?rnd=1731060881019">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/css/mbr-additional.css?rnd=1731060881019" type="text/css">
+  
+  
+  
+  
+
+
+<style>
+.navbar-fixed-top {
+  top: auto;
+}
+#mobiriseBanner.container-banner {
+  height: 8rem;
+  opacity: 1;
+  -webkit-animation: 4s linear animationHeight;
+  -moz-animation: 4s linear animationHeight;
+    -o-animation: 4s linear animationHeight;
+       animation: 4s linear animationHeight;
+       transition: all  0.5s;
+}
+#mobiriseBanner.container-banner.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s linear animationClosing;
+  -moz-animation:  0.5s linear animationClosing;
+    -o-animation:  0.5s linear animationClosing;
+       animation:  0.5s linear animationClosing;
+}
+#mobiriseBanner .banner {
+  min-height: 8rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  opacity:1;
+  -webkit-animation: 4s linear animationBanner;
+  -moz-animation: 4s linear animationBanner;
+    -o-animation: 4s linear animationBanner;
+       animation: 4s linear animationBanner;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mobiriseBanner .banner p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+#mobiriseBanner .buy-license {
+  text-decoration: underline;
+}
+#mobiriseBanner .banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+.mbr-halfscreen {
+  height: 60vh; /* This will set the section height to 50% of the viewport height */
+}
+/* Remove dropdown arrow */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+        /* General container styling */
+        .account-settings-container {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Title styling */
+        .account-settings-container h1 {
+            color: #343a40;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .account-settings-container h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 20px;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        /* Form styling */
+        .account-settings-container .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .account-settings-container .form-control {
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        .account-settings-container .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .account-settings-container .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Messages styling */
+        .messages {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .messages li {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+
+        .messages .error {
+            background-color: #dc3545;
+        }
+
+        .messages .success {
+            background-color: #28a745;
+        }
+
+        .messages .info {
+            background-color: #17a2b8;
+        }
+
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   
+@-webkit-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+@media(max-width: 767px) {
+  #mobiriseBanner.container-banner {
+    height: 12rem;
+  }
+  #mobiriseBanner .banner {
+    min-height: 12rem;
+  }
+  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-o-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+
+  @-webkit-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-moz-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+}
+</style>
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-utwSmHFR8Y" once="menu" id="menu-5-utwSmHFR8Y">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="https://r.mobirisesite.com/875197/assets/images/g19a635698b1b94ea78769e054825-h_m37du4g9.png" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="#">Communion</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'index' %}" id="homeLink">
+                  Home
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'help_alert' %}" id="helpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="helpDropdown">
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}">Help Request form</a></li>
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}#news-1-utwSmHJyLO">Help Request list</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'event_list' %}" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'event_list' %}">Upcoming Events</a></li>
+                  <li><a class="dropdown-item" href="{% url 'event_create' %}">Create Events</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'social_issues_groups_list' %}" id="groupsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Groups
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="groupsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'social_issues_groups_list' %}">Discussion Groups</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_social_issues_group' %}">Create a Discussion Group</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'community_leaders_list' %}" id="leadersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Leaders
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="leadersDropdown">
+                  <li><a class="dropdown-item" href="{% url 'community_leaders_list' %}">View Leaders</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_community_leader' %}">Add Leader</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'settings' %}" id="settingsLink">
+                  Settings
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'profile' %}" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                  <li><a class="dropdown-item" href="{% url 'profile' %}">View Profile</a></li>
+                  <li><a class="dropdown-item" href="{% url 'profile_edit' %}">Edit Profile</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-black display-4" href="{% url 'login' %}" id="settingsLink">
+                Login
+            </a>
+        </li>
+      </ul>
+
+				
+				<div class="navbar-buttons mbr-section-btn">
+					<a class="btn btn-primary display-4" href="#">Get Help</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-utwSmHHwOY mbr-halfscreen" data-bg-video="https://www.youtube.com/embed/sHaBr-Tlm7Q?autoplay=1&amp;loop=1&amp;playlist=sHaBr-Tlm7Q&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="hero-15-utwSmHHwOY">
+  
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="content-wrap col-12 col-md-12">
+          <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+            <strong>Settings</strong>
+          </h1>
+          
+          <div class="mbr-section-btn">
+            <a class="btn btn-white-outline display-7" href="#news-1-utwSmHJyLOss">Start Now</a> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Help Request Form Section -->
+<section data-bs-version="5.1" class="form cid-utwSmHelpForm" id="news-1-utwSmHJyLOss">
+    <div class="container mt-4 account-settings-container">
+        <h1 class="text-center">Account Settings</h1>
+  
+        <!-- Alert for feedback messages -->
+        {% if messages %}
+          <ul class="messages" style="list-style-type: none; padding: 0;">
+            {% for message in messages %}
+              <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+  
+        <!-- Password Change Form -->
+        <form method="POST" class="mb-4">
+          {% csrf_token %}
+          <input type="hidden" name="change_password" value="1">
+          <h2>Change Password</h2>
+          <div class="form-group">
+            {{ password_form.as_p }}
+          </div>
+          <button type="submit" class="btn btn-primary">Change Password</button>
+        </form>
+  
+        <!-- Notification Preferences Form -->
+        <form method="POST" class="mb-4">
+          {% csrf_token %}
+          <input type="hidden" name="update_notifications" value="1">
+          <h2>Notification Preferences</h2>
+          <div class="form-group">
+            {{ notification_form.as_p }}
+          </div>
+          <button type="submit" class="btn btn-primary">Update Preferences</button>
+        </form>
+      </div>
+  </section>
+  
+
+  
+<section data-bs-version="5.1" class="social4 cid-utwSmHKS6N" id="follow-us-1-utwSmHKS6N">
+    
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+                    <strong>Join Our Community</strong>
+                </h3>
+                <div class="social-list align-center">
+                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="#">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-twitter m-2" href="#" target="_blank">
+                        <span class="socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-instagram m-2" href="#" target="_blank">
+                        <span class="socicon-instagram socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-tiktok m-2" href="#" target="_blank">
+                        <span class="socicon-tiktok socicon"></span>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-utwSmHKIPQ" id="contact-form-2-utwSmHKIPQ">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Need Help? Reach Out!</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="NeZwvL5RNo6etB26arRvzpVhF068o86SCaSgWsD0E1HxfznUD4pjAKBBwrupgjjaz1kppNzVftUh/NxZcJe5fMh/FeD9jk+pDG19e71CIi6CS43eZQraYIJhaiAYxu13">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-contact-form-2-utwSmHKIPQ">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-contact-form-2-utwSmHKIPQ">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-contact-form-2-utwSmHKIPQ"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Send It!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts03 cid-utwSmHKggv" id="contacts-11-utwSmHKggv">
+  
+
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="col-12 col-md-12">
+          <h5 class="mbr-section-title mbr-fonts-style mt-0 mb-4 display-2">
+            <strong>Get in Touch</strong>
+          </h5>
+          <p class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-7">
+            Phone: 1-800-555-0199
+            <br>Help Request Form: info@communionapp.com
+            <br>Help Request Form:  India
+            <br>Working Hours: Mon-Fri: 9 AM - 5 PM
+          </p> 
+
+          
+        </div>
+      </div>
+        <div class="col-lg-8 side-features">
+        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="footer4 cid-utwSmHMmy5" once="footers" id="footer-4-utwSmHMmy5">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">© 2024 Communion App. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://r.mobirisesite.com/877954/assets/web/assets/jquery/jquery.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/parallax/jarallax.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/smoothscroll/smooth-scroll.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/ytplayer/index.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/dropdown/js/navbar-dropdown.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/vimeoplayer/player.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/scrollgallery/scroll-gallery.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/masonry/masonry.pkgd.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/imagesloaded/imagesloaded.pkgd.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/theme/js/script.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/formoid.min.js?rnd=1731060881019"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script>
+      // Function to show alerts
+      function showAlert(type, message) {
+          const alertBox = type === 'success' ? $('#success-alert') : $('#error-alert');
+          alertBox.text(message).show();
+          setTimeout(() => {
+              alertBox.fadeOut();
+          }, 3000);
+      }
+
+      $(document).ready(function() {
+          function handleFormSubmit(formSelector, successMessage, errorMessage) {
+              $(formSelector).on('submit', function(e) {
+                  e.preventDefault();
+                  
+                  // Validate password match for password change
+                  if (formSelector === '#password-change-form') {
+                      const newPassword = $('#new_password').val();
+                      const confirmPassword = $('#confirm_password').val();
+                      if (newPassword !== confirmPassword) {
+                          showAlert('error', 'New password and confirm password do not match.');
+                          return;
+                      }
+                  }
+                  
+                  // Submit the form data using AJAX
+                  $.ajax({
+                      type: 'POST',
+                      url: $(this).attr('action'),
+                      data: $(this).serialize(),
+                      success: function(response) {
+                          showAlert('success', successMessage);
+                      },
+                      error: function(response) {
+                          showAlert('error', errorMessage);
+                      }
+                  });
+              });
+          }
+
+          handleFormSubmit('#password-change-form', 'Password changed successfully!', 'Failed to change password.');
+          handleFormSubmit('#notification-preferences-form', 'Notification preferences updated!', 'Failed to update preferences.');
+
+          // Toggle password visibility
+          const togglePasswordVisibility = (inputId, iconId) => {
+              $(iconId).on('click', function() {
+                  const input = $(inputId);
+                  input.attr('type', input.attr('type') === 'password' ? 'text' : 'password');
+                  $(this).toggleClass('fa-eye fa-eye-slash');
+              });
+          };
+
+          togglePasswordVisibility('#current_password', '#toggleCurrentPassword');
+          togglePasswordVisibility('#new_password', '#toggleNewPassword');
+          togglePasswordVisibility('#confirm_password', '#toggleConfirmPassword');
+      });
+      
+  </script>
+
+  
+  
+
+</body>
+</html>

@@ -1,0 +1,962 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://r.mobirisesite.com/877656/assets/images/photo-1492684223066-81342ee5ff30.jpeg" type="image/x-icon">
+  <meta name="description" content="Create and manage your events effortlessly with our intuitive event form. Customize details, set dates, and invite attendees with ease.">
+  <title>Event Creation Form</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1731053196987">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/bootstrap/css/bootstrap.min.css?rnd=1731053196987">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1731053196987">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1731053196987">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/parallax/jarallax.css?rnd=1731053196987">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/dropdown/css/style.css?rnd=1731053196987">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/socicon/css/styles.css?rnd=1731053196987">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/theme/css/style.css?rnd=1731053196987">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/recaptcha.css?rnd=1731053196987">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877656/assets/css/mbr-additional.css?rnd=1731053196987" type="text/css">
+  
+  
+  
+  
+
+
+<style>
+.navbar-fixed-top {
+  top: auto;
+}
+#mobiriseBanner.container-banner {
+  height: 8rem;
+  opacity: 1;
+  -webkit-animation: 4s linear animationHeight;
+  -moz-animation: 4s linear animationHeight;
+    -o-animation: 4s linear animationHeight;
+       animation: 4s linear animationHeight;
+       transition: all  0.5s;
+}
+#mobiriseBanner.container-banner.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s linear animationClosing;
+  -moz-animation:  0.5s linear animationClosing;
+    -o-animation:  0.5s linear animationClosing;
+       animation:  0.5s linear animationClosing;
+}
+#mobiriseBanner .banner {
+  min-height: 8rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  opacity:1;
+  -webkit-animation: 4s linear animationBanner;
+  -moz-animation: 4s linear animationBanner;
+    -o-animation: 4s linear animationBanner;
+       animation: 4s linear animationBanner;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mobiriseBanner .banner p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+#mobiriseBanner .buy-license {
+  text-decoration: underline;
+}
+#mobiriseBanner .banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+/* Remove dropdown arrow */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   
+@-webkit-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+@media(max-width: 767px) {
+  #mobiriseBanner.container-banner {
+    height: 12rem;
+  }
+  #mobiriseBanner .banner {
+    min-height: 12rem;
+  }
+  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-o-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+
+  @-webkit-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-moz-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+}
+</style>
+</head>
+<body>
+  <section data-bs-version="5.1" class="menu menu2 cid-utwm1mItjy" once="menu" id="menu-5-utwm1mItjy">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="https://r.mobirisesite.com/875197/assets/images/g19a635698b1b94ea78769e054825-h_m37du4g9.png" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="#">Communion</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'index' %}" id="homeLink">
+                  Home
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'help_alert' %}" id="helpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="helpDropdown">
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}">Help Request form</a></li>
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}#news-1-utwSmHJyLO">Help Request list</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'event_list' %}" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'event_list' %}">Upcoming Events</a></li>
+                  <li><a class="dropdown-item" href="{% url 'event_create' %}">Create Events</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'social_issues_groups_list' %}" id="groupsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Groups
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="groupsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'social_issues_groups_list' %}">Discussion Groups</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_social_issues_group' %}">Create a Discussion Group</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'community_leaders_list' %}" id="leadersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Leaders
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="leadersDropdown">
+                  <li><a class="dropdown-item" href="{% url 'community_leaders_list' %}">View Leaders</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_community_leader' %}">Add Leader</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'settings' %}" id="settingsLink">
+                  Settings
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'profile' %}" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                  <li><a class="dropdown-item" href="{% url 'profile' %}">View Profile</a></li>
+                  <li><a class="dropdown-item" href="{% url 'profile_edit' %}">Edit Profile</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-black display-4" href="{% url 'login' %}" id="settingsLink">
+                Login
+            </a>
+        </li>
+      </ul>
+				
+				<div class="navbar-buttons mbr-section-btn">
+					<a class="btn btn-primary display-4" href="#">Get Started</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-utwm1mJ56W mbr-fullscreen" data-bg-video="https://www.youtube.com/embed/GNJKBrDEkvk?autoplay=1&amp;loop=1&amp;playlist=GNJKBrDEkvk&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="hero-15-utwm1mJ56W">
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="content-wrap col-12 col-md-12" style="color: white;">
+                
+                <!-- Create a New Event Form -->
+                <h1 style="margin: 50px; padding-top:10px; text-align: center;">Create a New Event</h1>
+                <form method="POST" action="{% url 'event_create' %}">
+                    {% csrf_token %}
+
+                    <!-- Event Title -->
+                    <div class="form-group">
+                        <label for="title">Event Title:</label>
+                        <input type="text" name="title" class="form-control" id="title" required value="{{ form.title.value }}">
+                        {% for error in form.title.errors %}
+                            <div class="errorlist">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Event Date -->
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="datetime-local" name="date" class="form-control" id="date" required value="{{ form.date.value }}">
+                        {% for error in form.date.errors %}
+                            <div class="errorlist">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Location -->
+                    <div class="form-group">
+                        <label for="location">Location:</label>
+                        <input type="text" name="location" class="form-control" id="location" required value="{{ form.location.value }}">
+                        {% for error in form.location.errors %}
+                            <div class="errorlist">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-group">
+                        <label for="description">Description:</label>
+                        <textarea name="description" class="form-control" id="description" required>{{ form.description.value }}</textarea>
+                        {% for error in form.description.errors %}
+                            <div class="errorlist">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Organizer -->
+                    <div class="form-group">
+                        <label for="organizer">Organizer:</label>
+                        <input type="text" name="organizer" class="form-control" id="organizer" required value="{{ form.organizer.value }}">
+                        {% for error in form.organizer.errors %}
+                            <div class="errorlist">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Image URL -->
+                    <div class="form-group">
+                        <label for="image_url">Event Image URL:</label>
+                        <input type="url" name="image_url" class="form-control" id="image_url" placeholder="https://example.com/image.jpg">
+                        {% for error in form.image_url.errors %}
+                            <div class="errorlist">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Max Participants -->
+                    <div class="form-group">
+                        <label for="max_participants">Max Participants:</label>
+                        <input type="number" name="max_participants" class="form-control" id="max_participants" min="1" value="{{ form.max_participants.value }}">
+                        {% for error in form.max_participants.errors %}
+                            <div class="errorlist">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- RSVP Deadline -->
+                    <div class="form-group">
+                        <label for="rsvp_deadline">RSVP Deadline:</label>
+                        <input type="datetime-local" name="rsvp_deadline" class="form-control" id="rsvp_deadline" value="{{ form.rsvp_deadline.value }}">
+                        {% for error in form.rsvp_deadline.errors %}
+                            <div class="errorlist">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Event Type -->
+                    <div class="form-group">
+                        <label for="type">Event Type:</label>
+                        <select name="type" class="form-control" id="type">
+                            <option value="public" {% if form.type.value == 'public' %}selected{% endif %}>Public</option>
+                            <option value="private" {% if form.type.value == 'private' %}selected{% endif %}>Private</option>
+                            <option value="interfaith" {% if form.type.value == 'interfaith' %}selected{% endif %}>Interfaith</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-secondary mt-2">Create Event</button>
+                    <a href="{% url 'event_list' %}" class="btn btn-secondary mt-2">Back to Events</a>
+                    <a href="{% url 'index' %}" class="btn btn-secondary mt-2">Back to Home</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features10 cid-utwm1mKPOl" id="metrics-2-utwm1mKPOl">
+  
+
+  
+  
+  <div class="container">
+    
+    <div class="row justify-content-center">
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>1,000+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Happy Guests</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>500+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Events Created</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>100%</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Satisfaction Guaranteed</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="image02 cid-utwm1mL19z mbr-fullscreen mbr-parallax-background" id="image-13-utwm1mL19z">
+    
+    
+    <div class="container">
+        <div class="row"></div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery07 cid-utwm1mLTav" id="gallery-16-utwm1mLTav">
+  
+  
+  <div class="container-fluid gallery-wrapper">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head mb-5">
+          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>Epic Event Gallery</strong>
+          </h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877656/assets/images/photo-1464047736614-af63643285bf.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877656/assets/images/photo-1511578314322-379afb476865.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877656/assets/images/photo-1531058020387-3be344556be6.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877656/assets/images/photo-1527529482837-4698179dc6ce.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-utwm1mLD0K mbr-fullscreen" data-bg-video="https://www.youtube.com/embed/D2PZUB_lDCk?autoplay=1&amp;loop=1&amp;playlist=D2PZUB_lDCk&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="video-5-utwm1mLD0K">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="article13 cid-utwm1mLmSj" id="call-to-action-3-utwm1mLmSj">
+    
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-md-12 col-lg-10">
+                <div class="card-wrapper">
+                    <div class="card-box align-left">
+                        <h4 class="card-title mbr-fonts-style display-2">
+                            <strong>Unleash Your Event Creativity</strong>
+                        </h4>
+                        
+                        <div class="mbr-section-btn mt-4"><a class="btn btn-primary display-4" href="#">Create Now!</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="features03 cid-utwm1mLUkp" id="events-1-utwm1mLUkp">
+  
+  
+  <div class="container-fluid">
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head">
+          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>Upcoming Events</strong>
+          </h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="item features-image col-12 col-md-6 col-lg-3 active">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="https://r.mobirisesite.com/877656/assets/images/photo-1503428593586-e225b39bddfe.jpeg" alt="" title="">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
+              <strong>The Great Gatsby Gala Extravaganza</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">2024-12-15</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Step into the roaring twenties with flapper dresses, jazz, and a night of unforgettable fun!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-3">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="https://r.mobirisesite.com/877656/assets/images/photo-1501238295340-c810d3c156d2.jpeg" alt="" title="" data-slide-to="1" data-bs-slide-to="1">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+              <strong>Tech Titans Conference 2025</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">2025-01-20</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Where the brightest minds collide! Get ready for groundbreaking ideas and networking galore!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-3">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="https://r.mobirisesite.com/877656/assets/images/photo-1505373877841-8d25f7d46678.jpeg" alt="" title="" data-slide-to="2" data-bs-slide-to="2">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+              <strong>Summer Music Festival 2025</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">2025-06-10</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Dance, sing, and rock out with your favorite bands under the sun! Don’t miss the summer’s biggest bash!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item features-image col-12 col-md-6 col-lg-3">
+        <div class="item-wrapper">
+          <div class="item-img mb-3">
+            <img src="https://r.mobirisesite.com/877656/assets/images/photo-1527751171053-6ac5ec50000b.jpeg" alt="" title="" data-slide-to="2" data-bs-slide-to="2">
+          </div>
+          <div class="item-content align-left">
+            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+              <strong>Halloween Spooktacular Bash 2025</strong>
+            </h5>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">2025-10-31</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">Join us for a frightfully fun night filled with ghoulish games, creepy cocktails, and spine-chilling surprises!</p>
+            <div class="mbr-section-btn item-footer">
+              <a href="" class="btn item-btn btn-primary display-7">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="list1 cid-utwm1mMm7F" id="faq-1-utwm1mMm7F">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-12 col-lg-10 m-auto">
+                <div class="content">
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-12 content-head">
+                            <div class="mbr-section-head">
+                                <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                                    <strong>Curious Minds Want to Know!</strong>
+                                </h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bootstrap-accordion_8" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse1_8" aria-expanded="false" aria-controls="collapse1">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">What is this event about?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse1_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_8">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">This event is a wild ride of creativity, innovation, and networking! Expect the unexpected!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse2_8" aria-expanded="false" aria-controls="collapse2">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Who can attend this event?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse2_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_8">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Anyone with a pulse and a passion!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse3_8" aria-expanded="false" aria-controls="collapse3">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">How do I register for the event?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse3_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_8">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Just fill out the form below and voila! You're in!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse4_8" aria-expanded="false" aria-controls="collapse4">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Is there a dress code?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse4_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_8">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Wear whatever makes you feel fabulous!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <a role="button" class="panel-title collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-core="" href="#collapse5_8" aria-expanded="false" aria-controls="collapse5">
+                                    <h6 class="panel-title-edit mbr-semibold mbr-fonts-style mb-0 display-5">Will there be food and drinks?</h6>
+                                    <span class="sign mbr-iconfont mobi-mbri-arrow-down"></span>
+                                </a>
+                            </div>
+                            <div id="collapse5_8" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion" data-bs-parent="#bootstrap-accordion_8">
+                                <div class="panel-body">
+                                    <p class="mbr-fonts-style panel-text display-7">Absolutely! Come hungry and thirsty!</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="gallery10 cid-utwm1mMtaL" id="features-61-utwm1mMtaL">
+  
+
+
+  <div class="container-fluid">
+
+      <div class="loop-container">
+        <div class="item display-1" data-linewords="Networking Opportunities Galore * Inspiring Guest Speakers * Interactive Workshops * Live Entertainment * Swag Bags Included * Unforgettable Experiences *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+
+        <div class="item display-1" data-linewords="Networking Opportunities Galore * Inspiring Guest Speakers * Interactive Workshops * Live Entertainment * Swag Bags Included * Unforgettable Experiences *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+      </div>
+    
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="people05 cid-utwm1mMxNW" id="testimonials-5-utwm1mMxNW">
+	
+
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+					<strong>Buzz</strong>
+				</h3>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">This event changed my life! I met my business partner here!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877656/assets/images/photo-1589571894960-20bbe2828d0a.jpeg" alt="" data-slide-to="0" data-bs-slide-to="0">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Sarah Johnson</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">I laughed, I learned, I networked! Best event ever!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877656/assets/images/photo-1679746584014-fb31d4eb0a5e.jpeg" data-slide-to="1" data-bs-slide-to="1" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Mike Thompson</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">The energy was electric! Can't wait for the next one!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877656/assets/images/photo-1545803928-04e3f4cdd4ed.jpeg" data-slide-to="2" data-bs-slide-to="2" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Emily Davis</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">I came for the food, stayed for the fun!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877656/assets/images/photo-1626899798511-c3eaacb02846.jpeg" data-slide-to="4" data-bs-slide-to="4" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>James Smith</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">A whirlwind of creativity and connections!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877656/assets/images/photo-1692558588242-57cec1e32bba.jpeg" data-slide-to="6" data-bs-slide-to="6" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Jessica Lee</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">I left inspired and ready to conquer the world!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877656/assets/images/photo-1497485692312-a26e1cc30f1d.jpeg" data-slide-to="7" data-bs-slide-to="7" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>David Brown</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="clients04 cid-utwm1mMCij" id="clients-1-utwm1mMCij">
+    
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Our Amazing Sponsors</strong>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2 active">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/877656/assets/images/photo-1681415851723-dca11d0ec9a6.jpeg" alt="" title="" data-slide-to="1" data-bs-slide-to="1">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/877656/assets/images/photo-1579041925709-798d7d0fed1d.jpeg" alt="" title="" data-slide-to="2" data-bs-slide-to="2">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/877656/assets/images/photo-1606136968306-ab2868cc1f21.jpeg" alt="" title="" data-slide-to="3" data-bs-slide-to="3">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/877656/assets/images/photo-1529612700005-e35377bf1415.jpeg" alt="" title="" data-slide-to="4" data-bs-slide-to="4">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/877656/assets/images/photo-1596622723231-b20320c7346b.jpeg" alt="" title="" data-slide-to="5" data-bs-slide-to="5">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="item features-image col-12 col-md-6 col-sm-6 col-lg-2">
+                <div class="item-wrapper">
+                    <div class="">
+                        <img src="https://r.mobirisesite.com/877656/assets/images/photo-1651044450619-5ce74d316987.jpeg" alt="" title="" data-slide-to="6" data-bs-slide-to="6">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="social4 cid-utwm1mM3fU" id="follow-us-1-utwm1mM3fU">
+    
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+                    <strong>Join Our Wild Ride!</strong>
+                </h3>
+                <div class="social-list align-center">
+                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="#">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-twitter m-2" href="#" target="_blank">
+                        <span class="socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-instagram m-2" href="#" target="_blank">
+                        <span class="socicon-instagram socicon"></span>
+                    </a>
+                    
+                    
+                    
+                    
+                    
+                    <a class="iconfont-wrapper bg-tiktok m-2" href="#" target="_blank">
+                        <span class="socicon-tiktok socicon"></span>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-utwm1mNi6P" id="contact-form-2-utwm1mNi6P">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Create Your Epic Event</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="cmxBB7BDYlFYEhPb8s/gkYv6NSvJBd4fz/5PVUpWUghGQwhFJVZap+rSHBA5FX30q+681+waCpHDU9jB3iOBe2B0A9iOuKU5hdJuWO50Jhv06r2GerRzqrE7oqUESgPW">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-contact-form-2-utwm1mNi6P">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-contact-form-2-utwm1mNi6P">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Details" data-form-field="textarea" class="form-control" id="textarea-contact-form-2-utwm1mNi6P"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Unleash the Fun!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts03 cid-utwm1mNNWQ" id="contacts-11-utwm1mNNWQ">
+  
+
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="col-12 col-md-12">
+          <h5 class="mbr-section-title mbr-fonts-style mt-0 mb-4 display-2">
+            <strong>Get in Touch</strong>
+          </h5>
+          <p class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-7">
+            Phone: 1-800-555-0199
+            <br>Email: info@communionapp.com
+            <br>Address:  India
+            <br>Working Hours: Mon-Fri: 9am - 5pm
+          </p> 
+
+          
+        </div>
+      </div>
+        <div class="col-lg-8 side-features">
+        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="footer2 cid-utwm1mNQ4Z" once="footers" id="footer-5-utwm1mNQ4Z">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 center mt-2 mb-3">
+                <p class="mbr-fonts-style copyright mb-0 display-7">© 2024 Communion App. All rights reserved.</p>
+            </div>
+            <div class="col-12 col-lg-6 center">
+                <div class="row-links mt-2 mb-3">
+                    <ul class="row-links-soc">
+                        
+                        
+                        
+                        
+                    <li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-white">Home</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-white">About</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-white">Events</a>
+                        </li><li class="row-links-soc-item mbr-fonts-style display-7">
+                            <a href="#" class="text-white">Contact</a>
+                        </li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://r.mobirisesite.com/877656/assets/web/assets/jquery/jquery.min.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/parallax/jarallax.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/smoothscroll/smooth-scroll.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/ytplayer/index.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/dropdown/js/navbar-dropdown.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/vimeoplayer/player.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/scrollgallery/scroll-gallery.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/mbr-switch-arrow/mbr-switch-arrow.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/theme/js/script.js?rnd=1731053196987"></script>
+  <script src="https://r.mobirisesite.com/877656/assets/formoid.min.js?rnd=1731053196987"></script>
+  
+  
+  
+
+</body>
+</html>

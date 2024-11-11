@@ -1,0 +1,749 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="https://r.mobirisesite.com/877954/assets/images/photo-1707146177016-9906a2505a72.jpeg" type="image/x-icon">
+  <meta name="description" content="This page allows users to submit help requests and connect directly with those who can assist them. Get the help you need today!">
+  <title>Help Request Form</title>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/web/assets/mobirise-icons2/mobirise2.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/bootstrap/css/bootstrap.min.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/bootstrap/css/bootstrap-grid.min.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/bootstrap/css/bootstrap-reboot.min.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/parallax/jarallax.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/dropdown/css/style.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/socicon/css/styles.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/theme/css/style.css?rnd=1731060881019">
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/recaptcha.css?rnd=1731060881019">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap&display=swap"></noscript>
+  <link rel="stylesheet" href="https://r.mobirisesite.com/877954/assets/css/mbr-additional.css?rnd=1731060881019" type="text/css">
+  
+  
+  
+  
+
+
+<style>
+.navbar-fixed-top {
+  top: auto;
+}
+#mobiriseBanner.container-banner {
+  height: 8rem;
+  opacity: 1;
+  -webkit-animation: 4s linear animationHeight;
+  -moz-animation: 4s linear animationHeight;
+    -o-animation: 4s linear animationHeight;
+       animation: 4s linear animationHeight;
+       transition: all  0.5s;
+}
+#mobiriseBanner.container-banner.container-banner-closing {
+  pointer-events: none;
+  height: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s linear animationClosing;
+  -moz-animation:  0.5s linear animationClosing;
+    -o-animation:  0.5s linear animationClosing;
+       animation:  0.5s linear animationClosing;
+}
+#mobiriseBanner .banner {
+  min-height: 8rem;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 10px;
+  opacity:1;
+  -webkit-animation: 4s linear animationBanner;
+  -moz-animation: 4s linear animationBanner;
+    -o-animation: 4s linear animationBanner;
+       animation: 4s linear animationBanner;
+  z-index: 1031;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#mobiriseBanner .banner p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  animation: none;
+  visibility: visible;
+}
+#mobiriseBanner .buy-license {
+  text-decoration: underline;
+}
+#mobiriseBanner .banner .btn {
+  margin: 0.3rem 0.5rem;
+  animation: none;
+  visibility: visible;
+}
+.navbar.opened {
+    z-index: 1032;
+}
+.mbr-halfscreen {
+  height: 60vh; /* This will set the section height to 50% of the viewport height */
+}
+/* Remove dropdown arrow */
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-moz-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-o-keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+   @keyframes animationBanner { 0% { opacity: 0; top: -8rem; } 75% { opacity: 0; top: -8rem; } 100% { opacity: 1; top: 0; } }
+@-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+@-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 8rem; } }
+   
+@-webkit-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-moz-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@-o-keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+@keyframes animationClosing { 0% { height: 8rem; opacity: 1; } 30% { height: 8rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+
+@media(max-width: 767px) {
+  #mobiriseBanner.container-banner {
+    height: 12rem;
+  }
+  #mobiriseBanner .banner {
+    min-height: 12rem;
+  }
+  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-o-keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+    @keyframes animationBanner { 0% { opacity: 0; top: -12rem; } 75% { opacity: 0; top: -12rem; } 100% { opacity: 1; top: 0; } }
+  @-webkit-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-moz-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+  @-o-keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+    @keyframes animationHeight { 0% { height: 0; } 75% { height: 0; } 100% { height: 12rem; } }
+
+  @-webkit-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-moz-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @-o-keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+  @keyframes animationClosing { 0% { height: 12rem; opacity: 1; } 30% { height: 12rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+}
+</style>
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-utwSmHFR8Y" once="menu" id="menu-5-utwSmHFR8Y">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="https://r.mobirisesite.com/875197/assets/images/g19a635698b1b94ea78769e054825-h_m37du4g9.png" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="#">Communion</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'index' %}" id="homeLink">
+                  Home
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'help_alert' %}" id="helpDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Help
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="helpDropdown">
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}">Help Request form</a></li>
+                  <li><a class="dropdown-item" href="{% url 'help_alert' %}#news-1-utwSmHJyLO">Help Request list</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'event_list' %}" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Events
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'event_list' %}">Upcoming Events</a></li>
+                  <li><a class="dropdown-item" href="{% url 'event_create' %}">Create Events</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'social_issues_groups_list' %}" id="groupsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Groups
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="groupsDropdown">
+                  <li><a class="dropdown-item" href="{% url 'social_issues_groups_list' %}">Discussion Groups</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_social_issues_group' %}">Create a Discussion Group</a></li>
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'community_leaders_list' %}" id="leadersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Leaders
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="leadersDropdown">
+                  <li><a class="dropdown-item" href="{% url 'community_leaders_list' %}">View Leaders</a></li>
+                  <li><a class="dropdown-item" href="{% url 'create_community_leader' %}">Add Leader</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link link text-black display-4" href="{% url 'settings' %}" id="settingsLink">
+                  Settings
+              </a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link link text-black display-4 dropdown-toggle" href="{% url 'profile' %}" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Profile
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                  <li><a class="dropdown-item" href="{% url 'profile' %}">View Profile</a></li>
+                  <li><a class="dropdown-item" href="{% url 'profile_edit' %}">Edit Profile</a></li>
+              </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link text-black display-4" href="{% url 'login' %}" id="settingsLink">
+                Login
+            </a>
+        </li>
+      </ul>
+
+				
+				<div class="navbar-buttons mbr-section-btn">
+					<a class="btn btn-primary display-4" href="#help-request-form">Get Help</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+<section data-bs-version="5.1" class="header18 cid-utwSmHHwOY mbr-halfscreen" data-bg-video="https://www.youtube.com/embed/sHaBr-Tlm7Q?autoplay=1&amp;loop=1&amp;playlist=sHaBr-Tlm7Q&amp;t=20&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;showinfo=0&amp;autohide=1&amp;allowfullscreen=true&amp;mode=transparent" id="hero-15-utwSmHHwOY">
+  
+
+  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="content-wrap col-12 col-md-12">
+        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
+          <strong>Need Help?</strong>
+        </h1>
+        
+        <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">We're here to connect you with the right people fast!</p>
+        <div class="mbr-section-btn">
+          <a class="btn btn-white-outline display-7" href="#news-1-utwSmHJyLO">Start Now</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Help Request Form Section -->
+<section data-bs-version="5.1" class="form cid-utwSmHelpForm" id="help-request-form">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8">
+          <h2 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+            <strong>Submit a Help Request</strong>
+          </h2>
+          <form id="helpForm" method="post" action="{% url 'help_alert' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            <div class="form-group">
+                <label for="username" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="needHelp" class="form-label">Need of Help</label>
+                <input type="text" class="form-control" id="needHelp" name="needHelp" placeholder="What do you need help with?" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" name="description" rows="5" placeholder="Describe your issue" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="contactDetails" class="form-label">Contact Details</label>
+                <input type="text" class="form-control" id="contactDetails" name="contactDetails" placeholder="Enter your contact details" required>
+            </div>
+            
+            <!-- Image Upload Field -->
+            <div class="form-group">
+                <label for="image" class="form-label">Upload Image (optional)</label>
+                <input type="file" class="form-control" id="image" name="image" accept="image/*">
+            </div>
+        
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary mt-3">Submit Request</button>
+            </div>
+        </form>
+                
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Help Request Form Section -->
+  
+
+<section data-bs-version="5.1" class="features10 cid-utwSmHHWHR" id="metrics-2-utwSmHHWHR">
+  
+
+  
+  
+  <div class="container">
+    
+    <div class="row justify-content-center">
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>100+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Requests Daily</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>50+</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Experts Available</p>
+            
+          </div>
+        </div>
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
+        <div class="item-wrapper">
+          <div class="card-box align-left">
+            
+            <p class="card-title mbr-fonts-style mb-3 display-1">
+              <strong>24/7</strong>
+            </p>
+            <p class="card-text mbr-fonts-style mb-3 display-7">Support Guaranteed</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section data-bs-version="5.1" class="gallery07 cid-utwSmHIY3i" id="gallery-16-utwSmHIY3i">
+  
+  
+  <div class="container-fluid gallery-wrapper">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        <div class="mbr-section-head mb-5">
+          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+            <strong>Help Requests Gallery</strong>
+          </h4>
+          
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877954/assets/images/photo-1634839593004-667d278bac49.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877954/assets/images/photo-1723433892471-62f113c8c9a0.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877954/assets/images/photo-1724995872846-6b52f7e81691.jpeg" alt="">
+        </div>
+        <div class="grid-item">
+          <img src="https://r.mobirisesite.com/877954/assets/images/photo-1579966434689-366396b4963c.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="people04 cid-utwSmHI0OQ" id="testimonials-4-utwSmHI0OQ">
+	
+	
+	<div class="container">
+		<div class="row mb-5 justify-content-center">
+			<div class="col-12 mb-0 content-head">
+				<h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+					<strong>Cheers!</strong>
+				</h3>
+				
+			</div>
+		</div>
+		<div class="row mbr-masonry" data-masonry="{&quot;percentPosition&quot;: true }">
+			<div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">This site saved my life!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877954/assets/images/photo-1677520338280-664ae23816eb.jpeg" data-slide-to="0" data-bs-slide-to="0" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Emily Johnson</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">I got help faster than I expected!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877954/assets/images/photo-1586185018558-ea8f4b4c514f.jpeg" data-slide-to="4" data-bs-slide-to="4" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Michael Smith</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<div class="card-box align-left">
+						<p class="card-text mbr-fonts-style display-7">Best help request platform ever!</p>
+						<div class="img-wrapper mt-4 mb-3">
+							<img src="https://r.mobirisesite.com/877954/assets/images/photo-1676385901160-31e1b9e1c0c7.jpeg" data-slide-to="5" data-bs-slide-to="5" alt="">
+						</div>
+						<h5 class="card-title mbr-fonts-style display-7">
+							<strong>Sarah Connor</strong>
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="gallery10 cid-utwSmHJqhu" id="features-61-utwSmHJqhu">
+  
+
+
+  <div class="container-fluid">
+
+      <div class="loop-container">
+        <div class="item display-1" data-linewords="Instant Help * User Friendly * Chat Directly * 24/7 Support * Fast Responses * Community Driven *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+
+        <div class="item display-1" data-linewords="Instant Help * User Friendly * Chat Directly * 24/7 Support * Fast Responses * Community Driven *" data-direction="-1" data-speed="0.05">☁️ Best offers ☁️ Free delivery ☁️ Perfect design ☁️ Comfort ☁️ Support 24/7 ☁️ Vibes</div>
+      </div>
+    
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="header09 cid-utwSmHJFOk" id="call-to-action-7-utwSmHJFOk">
+    
+    
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <h1 class="mbr-section-title mbr-fonts-style mb-4 display-1">
+                    <strong>Need Help? Get Started Now!</strong>
+                </h1>
+                <p class="mbr-fonts-style mbr-text mb-4 display-7">Join our community and get the help you deserve!</p>
+                <div class="mbr-section-btn"><a class="btn btn-primary display-7" href="#help-request-form">Submit Your Request</a> 
+                    <a class="btn btn-secondary display-7" href="#news-1-utwSmHJyLO">Browse Help Requests</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="list05 cid-utwSmHJR5i" id="faq-3-utwSmHJR5i">
+    
+    <div class="container">
+        <div class="col-12 mb-5 content-head">
+            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Help Request FAQs</strong>
+            </h3>
+            
+        </div>
+        <div class="row justify-content-center ">
+            <div class="col-12 col-lg-8">
+                <div class="item features-without-image col-12 active">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>What is a help request?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">A help request is a plea for assistance!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>How do I submit a request?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Fill out the form and hit submit!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                            <strong>Can I chat with helpers?</strong></h5>
+                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Absolutely! Connect directly with helpers!</p>
+                    </div>
+                </div>
+                <div class="item features-without-image col-12">
+                  <div class="item-wrapper">
+                      <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                          <strong>Is my information secure?</strong></h5>
+                      <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Yes, we prioritize your privacy!</p>
+                  </div>
+              </div>
+              <div class="item features-without-image col-12">
+                <div class="item-wrapper">
+                    <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                        <strong>What if I need urgent help?</strong></h5>
+                    <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Mark it urgent and get quick responses!</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section data-bs-version="5.1" class="features03 cid-utwSmHJyLO" id="news-1-utwSmHJyLO">
+    <div class="container-fluid">
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 content-head">
+          <div class="mbr-section-head">
+            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+              <strong>Latest Help Requests</strong>
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        {% for request in help_requests %}
+        <div class="item features-image col-12 col-md-6 col-lg-3 {% if forloop.first %}active{% endif %}">
+          <div class="item-wrapper">
+            <div class="item-img mb-3">
+              {% if request.image %}
+                <img src="{{ request.image.url }}" alt="Uploaded Image" class="img-thumbnail" style="max-width: 500px;">
+              {% else %}
+                <img src="https://r.mobirisesite.com/877954/assets/images/default-placeholder.png" alt="Default Image" title="">
+              {% endif %}
+            </div>
+            <div class="item-content align-left">
+              <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
+                <strong>{{ request.need_help }}</strong>
+              </h5>
+              <p class="mbr-text mbr-fonts-style mb-3 display-7">{{ request.created_at|date:"F d, Y" }}</p>
+              <p class="mbr-text mbr-fonts-style mb-3 display-7">{{ request.description }}</p>
+              <div class="mbr-section-btn item-footer">
+                <a href="{% url 'help_alert_details' id=request.id %}" class="btn item-btn btn-primary display-7">Help</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% empty %}
+        <p>No help requests available.</p>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  
+<section data-bs-version="5.1" class="social4 cid-utwSmHKS6N" id="follow-us-1-utwSmHKS6N">
+    
+    
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="col-12">
+                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
+                    <strong>Join Our Community</strong>
+                </h3>
+                <div class="social-list align-center">
+                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="#">
+                        <span class="socicon-facebook socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-twitter m-2" href="#" target="_blank">
+                        <span class="socicon-twitter socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-instagram m-2" href="#" target="_blank">
+                        <span class="socicon-instagram socicon"></span>
+                    </a>
+                    <a class="iconfont-wrapper bg-tiktok m-2" href="#" target="_blank">
+                        <span class="socicon-tiktok socicon"></span>
+                    </a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="form5 cid-utwSmHKIPQ" id="contact-form-2-utwSmHKIPQ">
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>Need Help? Reach Out!</strong>
+                    </h3>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="NeZwvL5RNo6etB26arRvzpVhF068o86SCaSgWsD0E1HxfznUD4pjAKBBwrupgjjaz1kppNzVftUh/NxZcJe5fMh/FeD9jk+pDG19e71CIi6CS43eZQraYIJhaiAYxu13">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-contact-form-2-utwSmHKIPQ">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" id="email-contact-form-2-utwSmHKIPQ">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-contact-form-2-utwSmHKIPQ"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Send It!</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="contacts03 cid-utwSmHKggv" id="contacts-11-utwSmHKggv">
+  
+
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="col-12 col-md-12">
+          <h5 class="mbr-section-title mbr-fonts-style mt-0 mb-4 display-2">
+            <strong>Get in Touch</strong>
+          </h5>
+          <p class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-7">
+            Phone: 1-800-555-0199
+            <br>Help Request Form: info@communionapp.com
+            <br>Help Request Form:  India
+            <br>Working Hours: Mon-Fri: 9 AM - 5 PM
+          </p> 
+
+          
+        </div>
+      </div>
+        <div class="col-lg-8 side-features">
+        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6045.3003145248895!2d-73.9884657!3d40.7477229!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9ac1f1b85%3A0x7e33d1c0e7af3be4!2zMzUwIDV0aCBBdmUsIE5ldyBZb3JrLCBOWSAxMDExOCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1689597362021!5m2!1sen!2sen" allowfullscreen=""></iframe></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-bs-version="5.1" class="footer4 cid-utwSmHMmy5" once="footers" id="footer-4-utwSmHMmy5">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">© 2024 Communion App. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="https://r.mobirisesite.com/877954/assets/web/assets/jquery/jquery.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/bootstrap/js/bootstrap.bundle.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/parallax/jarallax.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/smoothscroll/smooth-scroll.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/ytplayer/index.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/dropdown/js/navbar-dropdown.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/vimeoplayer/player.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/scrollgallery/scroll-gallery.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/masonry/masonry.pkgd.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/imagesloaded/imagesloaded.pkgd.min.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/theme/js/script.js?rnd=1731060881019"></script>
+  <script src="https://r.mobirisesite.com/877954/assets/formoid.min.js?rnd=1731060881019"></script>
+  <script>
+    const notification = document.getElementById("notification");
+
+    document.getElementById("helpForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        fetch("{% url 'help_alert' %}", { // Ensure this is pointing to the correct URL
+            method: "POST",
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.status === 'success') {
+                // Show notification
+                notification.classList.remove("hidden");
+
+                // Append new submission to the list
+                const newSubmission = document.createElement('div');
+                newSubmission.className = 'submission-item';
+                newSubmission.innerHTML = `
+                    <p><strong>Username:</strong> ${data.request.username}</p>
+                    <p><strong>Need of Help:</strong> ${data.request.need_help}</p>
+                    <p><strong>Description:</strong> ${data.request.description}</p>
+                    <p><strong>Contact Details:</strong> ${data.request.contact_details}</p>
+                    <p><strong>Submitted On:</strong> ${data.request.created_at}</p>
+                `;
+                document.getElementById('submissionList').appendChild(newSubmission);
+                this.reset(); // Reset the form
+            }
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+            // Optionally show an error notification
+        });
+    });
+
+    // Optional: Show notification for a few seconds
+    if (notification) {
+        setTimeout(() => {
+            notification.classList.add("hidden");
+        }, 3000);
+    }
+</script>
+
+  
+  
+
+</body>
+</html>
